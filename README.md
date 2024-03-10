@@ -44,5 +44,5 @@ Contribuțiile sunt binevenite! Dacă dorești să contribui la dezvoltarea aces
 5. Trimite un Pull Request către branch-ul principal al acestui repository.
 
 ## Autor
-Acest proiect a fost creat de [Anna Dezsi](https://github.com/AnnaDezsi), [Chis Larisa](https://github.com/numele-tau).
+Acest proiect a fost creat de [Anna Dezsi](https://github.com/AnnaDezsi), [Chis Larisa](https://github.com/larisachis).
 
