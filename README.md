@@ -43,6 +43,9 @@ Contribuțiile sunt binevenite! Dacă dorești să contribui la dezvoltarea aces
 4. Push-uieste branch-ul către repository-ul tău fork (`git push origin feature/noua-functie`).
 5. Trimite un Pull Request către branch-ul principal al acestui repository.
 
+## Diagrama database
+![Database UML Diagram](./assets/diagrama_studenti.png)
+
 ## Autor
 Acest proiect a fost creat de [Anna Dezsi](https://github.com/AnnaDezsi), [Chis Larisa](https://github.com/larisachis).
 
