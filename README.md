@@ -6,7 +6,7 @@ Proiectul "Baze de date Studenti" este o aplicație web care gestionează inform
 
 ## Tehnologii folosite
 - **Interfața utilizatorului (UI):** React
-- **Server backend (API):** Spring Boot
+- **Server backend (API):** NodeJS si ExpressJS
 - **Bază de date:** MySQL
 
 ## Funcționalități
