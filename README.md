@@ -16,22 +16,6 @@ Proiectul "Baze de date Studenti" este o aplicație web care gestionează inform
 - **Vizualizare și gestionare note și prezențe:** Studenții și profesorii pot vizualiza și gestiona notele și prezențele asociate fiecărui student.
 - **Securitate:** Asigură securitatea datelor prin intermediul autentificării și autorizării pentru a proteja datele sensibile ale studenților.
 
-## Cum să rulezi proiectul local
-1. Clonează acest repository pe calculatorul tău local.
-2. Asigură-te că ai instalate următoarele:
-   - Node.js și npm pentru React.
-   - Java și Maven pentru Spring Boot.
-   - MySQL Server pentru baza de date.
-3. Configurare baza de date:
-   - Creează o bază de date MySQL și rulează scriptul de creare al tabelelor și datele inițiale.
-   - Configurează aplicația Spring Boot pentru a se conecta la baza de date prin fișierul `application.properties`.
-4. Pornirea serverului Spring Boot:
-   - Navighează către directorul backend al proiectului.
-   - Rulează comanda `mvn spring-boot:run`.
-5. Pornirea interfeței utilizatorului React:
-   - Navighează către directorul frontend al proiectului.
-   - Rulează comanda `npm install` pentru a instala dependențele.
-   - După instalare, rulează comanda `npm start` pentru a porni serverul de dezvoltare React.
 
 Acum, poți accesa aplicația într-un browser la adresa `http://localhost:3000`.
 
