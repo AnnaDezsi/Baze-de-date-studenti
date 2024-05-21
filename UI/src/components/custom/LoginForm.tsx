@@ -14,6 +14,9 @@ import {
   Input,
   Button,
 } from "@/components/ui";
+import { useMutation } from "@tanstack/react-query";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const formSchema = z.object({
   email: z.string().email().min(2, {
@@ -26,6 +29,7 @@ const formSchema = z.object({
 });
 
 export const LoginForm = () => {
+  const navigate = useNavigate();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -34,8 +38,25 @@ export const LoginForm = () => {
     },
   });
 
+  const postLoginData = (userData: any) => {
+    return axios.post("http://localhost:3500/api/auth/login", userData);
+  }
+
+  const mutation = useMutation({
+    mutationFn: postLoginData,
+    onSuccess: ({data}) => {
+      if(data?.token){
+        localStorage.setItem("token", data.token)
+        navigate("/dashboard")
+      }     
+    }
+  });
+
+
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    const cv = mutation.mutate(values)
+    console.log(cv);
+    
   };
   return (
     <Form {...form}>
