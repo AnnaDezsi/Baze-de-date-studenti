@@ -8,6 +8,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: studconnect123
       MYSQL_DATABASE: studconnect
+      MYSQL_HOST: localhost
     ports:
       - "3306:3306"
     volumes:

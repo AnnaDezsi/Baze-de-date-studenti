@@ -1,3 +1,6 @@
+"use client"
+
+
 import { RegisterForm } from "@/components/custom";
 
 export const Register = () => {
